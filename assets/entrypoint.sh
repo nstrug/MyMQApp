@@ -26,7 +26,7 @@ untar () {
 
 create_test_queue () {
     if [[ $(su - mqm -c dspmq | wc -l) == 0 ]]; then
-        echo "No queues defined, creating a test queue"
+        echo "Creating the MyMQApp Queues"
         su - mqm -c "crtmqm MYAPPQ1"
         su - mqm -c "crtmqm MYAPPQ2"
         su - mqm -c "crtmqm MYAPPQ3"
