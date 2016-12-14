@@ -33,6 +33,8 @@ create_test_queue () {
         su - mqm -c "crtmqm MYAPPQ4"
         su - mqm -c "crtmqm MYAPPQ5"
         su - mqm -c "crtmqm MYAPPQ6"
+        su - mqm -c "crtmqm MYAPPQ7"
+
     fi
 }
 
